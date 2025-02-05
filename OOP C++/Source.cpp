@@ -1,5 +1,28 @@
-//#include <iostream>
-//#include "student.h"
+#include <iostream>
+#include "student.h"
+#include "strwrp.h"
+
+int main() {
+	Student stud("Akimchik", 1488);
+
+	std::cout << stud.getName() << " " << stud.getAge() << "\n";
+
+
+	// Конструктор копирования
+	Student stud2 = stud;
+	std::cout << stud2.getName() << " " << stud2.getAge() << "\n";
+
+	StringWrapper str("Sfsefoirskjeisfawd");
+
+	// substr(1, 10);
+	std::string subs = str[1][10];
+
+	return 0;
+}
+
+
+
+//#include <iostream> //
 //
 //class Student {
 //private:
@@ -63,23 +86,3 @@
 //
 //	return 0;
 //}
-
-
-
-
-#include <iostream>
-#include "student.h"
-
-int main() {
-	Student stud("Akimchik", 1488);
-
-	std::cout << stud.getName() << " " << stud.getAge() << "\n";
-
-
-	// Конструктор копирования
-	Student stud2 = stud;
-	std::cout << stud2.getName() << " " << stud2.getAge() << "\n";
-
-
-	return 0;
-}
