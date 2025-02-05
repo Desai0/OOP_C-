@@ -36,7 +36,7 @@ void Student::setGrades(std::list<unsigned> const & list) {
 	}
 }
 
-void Student::setGrades(unsigned grade) {
+void Student::setGrade(unsigned grade) {
 	if (grade < 0 || grade > 12) throw std::invalid_argument("Grade is wrong");
 		gradesList.push_back(grade);
 }

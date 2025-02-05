@@ -1,8 +1,10 @@
 #include <iostream>
 #include "student.h"
 #include "strwrp.h"
+#include "drug.h"
 
 int main() {
+	setlocale(0, "");
 	Student stud("Akimchik", 1488);
 
 	std::cout << stud.getName() << " " << stud.getAge() << "\n";
@@ -16,6 +18,16 @@ int main() {
 
 	// substr(1, 10);
 	std::string subs = str[1][10];
+	std::cout << subs << "\n\n";
+
+
+
+	Drug nark("Синтетический", 0.69, "Альфа");
+
+	std::cout << nark.getType() << " " << nark.getWeight() << " " << nark.getName() << "\n";
+
+	Drug nark2 = nark;
+	std::cout << nark2.getType() << " " << nark2.getWeight() << " " << nark2.getName() << "\n";
 
 	return 0;
 }

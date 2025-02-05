@@ -39,7 +39,7 @@ public: //для обращение и изменения привата, используем setter и getter
 	/// Добавляет одну оценку
 	/// </summary>
 	/// <param name="grade">Величина оценки</param>
-	void setGrades(unsigned grade);
+	void setGrade(unsigned grade);
 
 
 	/// <summary>
